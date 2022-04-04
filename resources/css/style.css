@@ -1,0 +1,253 @@
+/* [Global Styles] */
+
+body {
+	font-family: Verdana;
+	margin: 0px;
+}
+
+h1 {
+	font-size: 40px;
+	color: #4a4a4a;
+	margin: 0px 0px;
+}
+
+h2 {
+	font-size: 30px;
+	color: #4a4a4a;
+}
+
+h3 {
+	color: #4a4a4a;
+}
+
+p {
+	color: #5f5f5f;
+}
+
+figcaption {
+	color: #4a4a4a;
+	font-size: 12px;
+}
+
+/* [Header Section] */
+
+/* [Navigation Section] */
+
+nav#menu {
+	display: flex;
+	background-color: white;
+	height: 64px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#menu span {
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+#logo {
+	margin-left:  24px;
+	position: relative;
+	bottom: 5px;
+}
+
+#logo img {
+	position: relative;
+	top: 10px;
+}
+
+span#shop {
+	font-weight: bold;
+	color: #4a4a4a;
+}
+
+span#academy {
+	color: #9b9b9b;
+}
+
+div#links {
+	display: flex;
+	margin-right: 24px;
+	gap: 16px;
+}
+
+div#links a {
+	color: #4a4a4a;
+	text-decoration: none;
+}
+
+/* [Banner Section] */
+
+section#banner {
+	display: flex;
+	background-color: #d8d8d8;
+	align-items: center;
+}
+
+section#banner img {
+	width: 60%;
+	margin: 32px 24px;
+}
+
+div#start {
+	margin-right: 24px;
+	margin-left: 24px;
+}
+
+div#start p  {
+	font-size: 25px;
+	color: #3d3d3d;
+}
+
+div#start button {
+	width: 100%;
+	background-color: #4a4a4a;
+	color: white;
+	padding: 8px 0px;
+	font-size: 20px;
+}
+
+/* [Main Section] */
+
+/* [Articles Section] */
+
+section#articles {
+	display: flex;
+}
+
+article.expanded {
+	width: 60%;
+	border-right: 1px solid #d8d8d8;
+}
+
+figure {
+	margin: 32px 24px;
+}
+
+figure img {
+	width: 100%;
+}
+
+aside.aside {
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+article.condensed {
+	display: flex;
+}
+
+article.condensed:hover {
+	background-color: #d8d8d8;
+}
+
+article.condensed img {
+	width: 35%;
+	height: auto;
+	margin: 16px 16px;
+}
+
+div.read-more {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 65%;
+}
+
+div.read-more h3 {
+	margin: 0px 0px;
+}
+
+div.read-more a {
+	text-decoration: none;
+}
+
+/* [Learning Section] */
+
+section#learning {
+	display: flex;
+	flex-direction: column;
+	background-color: #f3f5f5;
+	align-items: center;
+}
+
+section#learning h2 {
+	margin-top: 32px;
+	margin-bottom: 0px;
+}
+
+div#courses {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 32px;
+	margin: 32px 72px;
+}
+
+div.course {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+}
+
+div.course img {
+	height: auto;
+}
+
+div.course h3 {
+	margin-top: 16px;
+	margin-bottom: 8px;
+}
+
+div.course p {
+	margin-top: 0px;
+	margin-bottom: 8px;
+}
+
+div.course-info {
+	margin-top: 16px;
+	margin-left: 16px;
+	margin-bottom: 24px;
+}
+
+/* [Thesis Section] */
+
+section#thesis {
+	display: flex;
+	background-color: #f3f5f5;
+}
+
+section#thesis article.expanded {
+	border-right: 1px solid transparent;
+}
+
+section#thesis aside.aside {
+	position: relative;
+	top: 15px;
+	justify-content: flex-start;
+}
+
+iframe {
+	width: 100%;
+}
+
+/* [Footer Section] */
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+footer p {
+	margin-left: 24px;
+}
+
+footer nav {
+	margin-right: 24px;
+}
