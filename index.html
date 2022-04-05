@@ -12,14 +12,18 @@
 		<!-- Navigation Section -->
 		<nav id="menu">
 			<div id="logo">
-				<img src="resources/images/ic-logo.svg" alt="Logo">
+				<a href="#"><img src="resources/images/ic-logo.svg" alt="Logo"></a>
 				<span id="shop">Shop</span><span id="academy">Academy</span>
 			</div>
 
 			<div id="links">
-				<a href="#">On campus</a>
-				<a href="#">Online</a>
-				<a href="#">Sign in</a>
+				<a href="#" class="icon-link"><img src="resources/images/ic-logo.svg" alt="Logo"></a>
+				<a href="#" class="text-link">On campus</a>
+				<a href="#" class="icon-link"><img src="resources/images/ic-on-campus.svg" alt="On Campus"></a>
+				<a href="#" class="text-link">Online</a>
+				<a href="#" class="icon-link"><img src="resources/images/ic-online.svg" alt="Online"></a>
+				<a href="#" class="text-link">Sign in</a>
+				<a href="#" class="icon-link"><img src="resources/images/ic-login.svg" alt="Sign in"></a>
 			</div>
 		</nav>
 
@@ -27,8 +31,8 @@
 		<section id="banner">
 			<img src="resources/images/banner.jpg" alt="Banner">
 			<div id="start">
-				<h1>Learn something<br>new everyday</h1>
-				<p>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
+				<h1>Learn something<br> new everyday</h1>
+				<p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
 				<button id="start-here">Start here</button>
 			</div>
 		</section>
@@ -49,7 +53,8 @@
 
 			<aside class="aside">
 				<article class="condensed">
-					<img src="resources/images/information-orientation.jpg" alt="Orientation date">
+					<img src="resources/images/information-orientation.jpg" alt="Orientation date" class="desktop">
+					<img src="resources/images/information-orientation-mobile.jpg" alt="Orientation date" class="mobile">
 					<div class="read-more">
 						<h3>Orientation date</h3>
 						<p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
@@ -58,7 +63,8 @@
 				</article>
 
 				<article class="condensed">
-					<img src="resources/images/information-campus.jpg" alt="Our campus">
+					<img src="resources/images/information-campus.jpg" alt="Our campus" class="desktop">
+					<img src="resources/images/information-campus-mobile.jpg" alt="Our campus" class="mobile">
 					<div class="read-more">
 						<h3>Our campus</h3>
 						<p>Find which campus is close by you</p>
@@ -67,7 +73,8 @@
 				</article>
 
 				<article class="condensed">
-					<img src="resources/images/information-guest-lecture.jpg" alt="Our guest lecture">
+					<img src="resources/images/information-guest-lecture.jpg" alt="Our guest lecture" class="desktop">
+					<img src="resources/images/information-guest-lecture-mobile.jpg" alt="Our guest lecture" class="mobile">
 					<div class="read-more">
 						<h3>Our guest lecture</h3>
 						<p>Join a keynote with Oliver Sack about music in medical treatment</p>
@@ -80,6 +87,14 @@
 		<!-- Learning Section -->
 		<section id="learning">
 			<h2>Start learning</h2>
+			<div id="courses-mobile">
+				<h3>Software engineering</h3>
+				<h3>Computer Art</h3>
+				<h3>Design</h3>
+				<h3>Data</h3>
+				<h3>Business</h3>
+				<h3>Marketing</h3>
+			</div>
 			<div id="courses">
 				<div class="course">
 					<img src="resources/images/course-software.jpg" alt="Software engineering">
@@ -138,34 +153,43 @@
 		</section>
 
 		<!-- Thesis Section -->
+		<section id="thesis-mobile">
+			<h2>Thesis exhibit</h2>
+			<iframe width="100%" height="720px" 
+				src="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+			</iframe> 
+		</section>
 		<section id="thesis">
-			<article class="expanded">
-				<figure>
-					<iframe width="100%" height="720px" 
-						src="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-					</iframe> 
-					<h3>Reimagine urban</h3>
-					<p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
-				</figure>
-			</article>
-
-			<aside class="aside">
-				<article class="condensed">
-					<img src="resources/images/thesis-fisma.jpg" alt="Fisma: Design and Prototype">
-					<div class="read-more">
-						<h3>Fisma: Design and Prototype</h3>
-						<p>Designer showcase of new prototype product</p>
-					</div>
+			<h2>Thesis exhibit</h2>
+			<div id="articles">
+				<article class="expanded">
+					<figure>
+						<iframe width="100%" height="720px" 
+							src="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+						</iframe> 
+						<h3>Reimagine urban</h3>
+						<p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+					</figure>
 				</article>
 
-				<article class="condensed">
-					<img src="resources/images/thesis-now-and-then.jpg" alt="Now and then">
-					<div class="read-more">
-						<h3>Now and then</h3>
-						<p>Research study about New York</p>
-					</div>
-				</article>
-			</aside>
+				<aside class="aside">
+					<article class="condensed">
+						<img src="resources/images/thesis-fisma.jpg" alt="Fisma: Design and Prototype">
+						<div class="read-more">
+							<h3>Fisma: Design and Prototype</h3>
+							<p>Designer showcase of new prototype product</p>
+						</div>
+					</article>
+
+					<article class="condensed">
+						<img src="resources/images/thesis-now-and-then.jpg" alt="Now and then">
+						<div class="read-more">
+							<h3>Now and then</h3>
+							<p>Research study about New York</p>
+						</div>
+					</article>
+				</aside>
+			</div>
 		</section>
 	</main>
 

@@ -216,9 +216,19 @@ div.course-info {
 
 /* [Thesis Section] */
 
+div#articles {
+	display: flex;
+}
+
 section#thesis {
 	display: flex;
 	background-color: #f3f5f5;
+	flex-direction: column;
+	align-items: center;
+}
+
+section#thesis h2 {
+	margin: 0px;
 }
 
 section#thesis article.expanded {
@@ -250,4 +260,140 @@ footer p {
 
 footer nav {
 	margin-right: 24px;
+}
+
+footer nav a {
+	color: #4a4a4a;
+	text-decoration: none;
+}
+
+/* [Media Queries] */
+
+@media only screen and (max-width: 918px) {
+	.text-link {
+		display: none;
+	}
+
+	#logo {
+		display: none;
+	}
+
+	div#links {
+		align-items: center;
+		justify-content: space-evenly;
+		margin-left: 24px;
+		gap: 100%;
+	}
+
+	nav#menu {
+		justify-content: center;
+	}
+
+	section#banner {
+		flex-direction: column;
+	}
+
+	section#banner img {
+		width: 100%;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		max-height: 60%;
+	}
+
+	div#start {
+		margin: 32px 16px;
+	}
+
+	div#start br {
+		display: none;
+	}
+
+	section#articles article.expanded {
+		display: none;
+	}
+
+	section#articles {
+		justify-content: center;
+		margin-bottom: 32px;
+	}
+
+	article.condensed {
+		flex-direction: column;
+		align-items: center;
+		margin: 16px 16px;
+	}
+
+	article.condensed img {
+		width: 100%;
+	}
+
+	article.condensed img.desktop {
+		display: none;
+	}
+
+	aside.aside {
+		width: 100%;
+	}
+
+	article.condensed img.mobile {
+		margin: 16px 16px;
+	}
+
+	article.condensed:hover {
+		background-color: transparent;
+	}
+
+	section#thesis aside.aside {
+		display: none;
+	}
+
+	div.read-more {
+		position: relative;
+		top: 15px;
+		width: 100%;
+	}
+
+	div#courses {
+		display: none;
+	}
+
+	div#courses-mobile {
+		width: 90%;
+	}
+
+	div#courses-mobile h3 {
+		background-color: #d8d8d8;
+		color: #4a4a4a;
+		padding: 16px 0px 24px 16px;
+	}
+
+	section#thesis {
+		display: none;
+	}
+
+	section#thesis-mobile {
+		text-align: center;
+	}
+
+	footer nav {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 918px) {
+	.icon-link img {
+		display: none;
+	}
+
+	article.condensed img.mobile {
+		display: none;
+	}
+
+	div#courses-mobile {
+		display: none;
+	}
+
+	section#thesis-mobile {
+		display: none;
+	}
 }
